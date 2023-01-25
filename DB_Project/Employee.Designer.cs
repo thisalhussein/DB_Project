@@ -215,9 +215,12 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Male ",
+            "Female"});
             this.comboBox1.Location = new System.Drawing.Point(39, 384);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 32);
+            this.comboBox1.Size = new System.Drawing.Size(380, 32);
             this.comboBox1.TabIndex = 22;
             // 
             // Employee
