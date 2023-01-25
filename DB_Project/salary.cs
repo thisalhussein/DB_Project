@@ -26,5 +26,10 @@ namespace DB_Project
         {
 
         }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
