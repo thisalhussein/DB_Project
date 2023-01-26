@@ -45,7 +45,7 @@ namespace DB_Project
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "Insert into DepartmentTbl values('{0}')";
-                    Query = string.Format(DepNameTb.Text);
+                    Query = string.Format(Query,DepNameTb.Text);
                     Con.SetData(Query);
                     ShowDepartments();
                     MessageBox.Show("Department Added");
