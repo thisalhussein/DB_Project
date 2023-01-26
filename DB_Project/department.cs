@@ -26,5 +26,13 @@ namespace DB_Project
         {
 
         }
+        private void ListerDepartments()
+        {
+
+        }
+        private void Addbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
