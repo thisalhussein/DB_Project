@@ -39,6 +39,9 @@ namespace DB_Project
             try
             {
                 if(DepNameTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data !");
+                }
             }
             catch (Exception Ex)
             {
