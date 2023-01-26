@@ -79,6 +79,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1144, 88);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -239,7 +240,7 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.EmployeeList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.EmployeeList.BackgroundColor = System.Drawing.Color.White;
+            this.EmployeeList.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.EmployeeList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EmployeeList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.EmployeeList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -276,7 +277,7 @@
             this.EmployeeList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.EmployeeList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.EmployeeList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.EmployeeList.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.ThemeStyle.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EmployeeList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmployeeList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.EmployeeList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;

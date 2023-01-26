@@ -29,10 +29,10 @@ namespace DB_Project
             sda.Fill(dt);
             return dt;
         }
-        public int SetData(string Query)
+        public int SetData(String Query)
         {
             int cnt = 0;
-            if(Con.State == ConnectionState.Closed)
+            if (Con.State == ConnectionState.Closed)
             {
                 Con.Open();
             }
@@ -42,3 +42,4 @@ namespace DB_Project
         }
     }
 }
+
