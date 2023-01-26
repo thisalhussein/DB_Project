@@ -28,7 +28,7 @@ namespace DB_Project
         }
         private void ListerDepartments()
         {
-
+            string Query = "Select = form DepartmentTbl";
         }
         private void Addbtn_Click(object sender, EventArgs e)
         {
