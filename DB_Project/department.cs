@@ -40,9 +40,9 @@ namespace DB_Project
             {
 
             }
-            catch ()
+            catch (Exception Ex)
             {
-                throw;
+                MessageBox.Show(Ex.Message);
             }   
         }
     }
