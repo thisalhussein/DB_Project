@@ -97,7 +97,27 @@ namespace DB_Project
         }
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data !");
+                }
+                else
+                {
+                    string Dep = DepNameTb.Text;
+                    string Query = "Update DepartmentTbl set DepName = '{0}' where DepId = {1}";
+                    Query = string.Format(Query, DepNameTb.Text, Key);
+                    Con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Updated");
+                    DepNameTb.Text = "";
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
         }
     }
 }
