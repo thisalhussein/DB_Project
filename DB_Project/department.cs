@@ -34,18 +34,19 @@ namespace DB_Project
             string Query = "Select = form DepartmentTbl";
             DepList.DataSource = Con.GetData(Query);
         }
-        private void Addbtn_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             try
             {
-                if(DepNameTb.Text == "")
+                if (DepNameTb.Text == "")
                 {
                     MessageBox.Show("Missing Data !");
-                } else
+                }
+                else
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "Insert into DepartmentTbl values('{0}')";
-                    Query = string.Format(Query,DepNameTb.Text);
+                    Query = string.Format(Query, DepNameTb.Text);
                     Con.SetData(Query);
                     ShowDepartments();
                     MessageBox.Show("Department Added");
@@ -55,7 +56,7 @@ namespace DB_Project
             catch (Exception Ex)
             {
                 MessageBox.Show(Ex.Message);
-            }   
+            }
         }
         int Key = 0;
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -71,8 +72,9 @@ namespace DB_Project
             }
         }
 
-        private void Editbtn_Click(object sender, EventArgs e)
+        private void UpdateBtn_Click(object sender, EventArgs e)
         {
+
             try
             {
                 if (DepNameTb.Text == "")
@@ -95,8 +97,9 @@ namespace DB_Project
                 MessageBox.Show(Ex.Message);
             }
         }
-        private void DeleteBtn_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+
             try
             {
                 if (DepNameTb.Text == "")
@@ -122,16 +125,6 @@ namespace DB_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
             try
             {
                 if (DepNameTb.Text == "")
@@ -154,5 +147,12 @@ namespace DB_Project
                 MessageBox.Show(Ex.Message);
             }
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
