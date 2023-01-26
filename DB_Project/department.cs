@@ -82,7 +82,7 @@ namespace DB_Project
                 else
                 {
                     string Dep = DepNameTb.Text;
-                    string Query = "Insert into DepartmentTbl values('{0}')";
+                    string Query = "Update into DepartmentTbl values('{0}')";
                     Query = string.Format(Query, DepNameTb.Text);
                     Con.SetData(Query);
                     ShowDepartments();
