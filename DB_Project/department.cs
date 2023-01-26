@@ -17,6 +17,7 @@ namespace DB_Project
         {
             InitializeComponent();
             Con = new Function();
+            ListerDepartments();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -35,7 +36,14 @@ namespace DB_Project
         }
         private void Addbtn_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+            }
+            catch ()
+            {
+                throw;
+            }   
         }
     }
 }
