@@ -38,7 +38,7 @@ namespace DB_Project
         {
             try
             {
-
+                if(DepNameTb.Text == "")
             }
             catch (Exception Ex)
             {
