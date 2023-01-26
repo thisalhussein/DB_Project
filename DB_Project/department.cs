@@ -32,7 +32,7 @@ namespace DB_Project
         private void ShowDepartments()
         {
             string Query = "Select = form DepartmentTbl";
-            DepList = DataSource = Con.GetData(Query);
+            DepList.DataSource = Con.GetData(Query);
         }
         private void Addbtn_Click(object sender, EventArgs e)
         {
