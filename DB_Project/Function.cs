@@ -14,6 +14,7 @@ namespace DB_Project
         private SqlCommand Cmd;
         private DataTable td;
         private SqlDataAdapter sda;
+        private string Constr;
         public Function()
         {
 
