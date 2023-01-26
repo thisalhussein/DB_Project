@@ -31,7 +31,7 @@ namespace DB_Project
         }
         private void ShowDepartments()
         {
-            string Query = "Select = form DepartmentTbl";
+            string Query = "Select * from DepartmentTbl";
             DepList.DataSource = Con.GetData(Query);
         }
         private void button1_Click_1(object sender, EventArgs e)

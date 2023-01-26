@@ -22,7 +22,7 @@ namespace DB_Project
             Cmd = new SqlCommand();
             Cmd.Connection = Con;
         }
-        public DataTable GetData(string Query)
+        private DataTable GetData(string Query)
         {
             dt = new DataTable();
             sda = new SqlDataAdapter(Query, ConStr);
