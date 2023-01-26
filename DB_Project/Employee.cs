@@ -12,6 +12,7 @@ namespace DB_Project
 {
     public partial class Employee : Form
     {
+        Function Con;
         public Employee()
         {
             InitializeComponent();
