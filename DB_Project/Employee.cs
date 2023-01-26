@@ -15,6 +15,8 @@ namespace DB_Project
         public Employee()
         {
             InitializeComponent();
+            Con = new Function();
+            ShowDepartments();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -57,6 +59,11 @@ namespace DB_Project
             Employee Obj = new Employee();
             Obj.Show();
             this.Hide();
+        }
+
+        private void AddBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
