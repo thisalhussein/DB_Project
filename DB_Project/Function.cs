@@ -10,6 +10,7 @@ namespace DB_Project
     internal class Function
     {
         private SqlConnection Con;
+        private SqlCommand Cmd;
         public Function()
         {
 
