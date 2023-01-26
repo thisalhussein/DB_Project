@@ -17,12 +17,12 @@ namespace DB_Project
         {
             InitializeComponent();
             Con = new Function();
-            Showdepartment();
+            ShowEmp();
         }
-        private void Showdepartment()
+        private void ShowEmp()
         {
             string Query = "Select * from DepartmentTbl";
-            DepList.DataSource = Con.GetData(Query);
+            EmployeeList.DataSource = Con.GetData(Query);
         }
         private void label2_Click(object sender, EventArgs e)
         {

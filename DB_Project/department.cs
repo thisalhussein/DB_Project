@@ -32,7 +32,7 @@ namespace DB_Project
         private void Showdepartment()
         {
             string Query = "Select * from DepartmentTbl";
-            DepList.DataSource = Con.GetData(Query);
+            DepL.DataSource = Con.GetData(Query);
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
@@ -83,16 +83,16 @@ namespace DB_Project
             }
         }
         int Key = 0;
-        private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DepL_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DepNameTb.Text = DepList.SelectedRows[0].Cells[0].Value.ToString();
+            DepNameTb.Text = DepL.SelectedRows[0].Cells[0].Value.ToString();
             if(DepNameTb.Text == "")
             {
                 Key = 0;
             }
             else
             {
-                Key = Convert.ToInt32(DepList.SelectedRows[0].Cells[0].Value.ToString());
+                Key = Convert.ToInt32(DepL.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
 
