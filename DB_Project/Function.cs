@@ -9,7 +9,7 @@ namespace DB_Project
 {
     internal class Function
     {
-        private SqlConnection
+        private SqlConnection Con;
         public Function()
         {
 
