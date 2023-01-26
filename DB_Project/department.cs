@@ -12,9 +12,11 @@ namespace DB_Project
 {
     public partial class department : Form
     {
+        Function Con;
         public department()
         {
             InitializeComponent();
+            Con = new Function();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -29,6 +31,7 @@ namespace DB_Project
         private void ListerDepartments()
         {
             string Query = "Select = form DepartmentTbl";
+            DepList = DataSource =
         }
         private void Addbtn_Click(object sender, EventArgs e)
         {
