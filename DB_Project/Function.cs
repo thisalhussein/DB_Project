@@ -12,7 +12,7 @@ namespace DB_Project
     {
         private SqlConnection Con;
         private SqlCommand Cmd;
-        private DataTable td;
+        private DataTable dt;
         private SqlDataAdapter sda;
         private string ConStr;
         public Function()
@@ -24,7 +24,7 @@ namespace DB_Project
         }
         public DataTable GetData(string Query)
         {
-
+            dt = new DataTable();
         }
     }
 }
