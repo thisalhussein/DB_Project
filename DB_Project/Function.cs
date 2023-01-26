@@ -13,6 +13,7 @@ namespace DB_Project
         private SqlConnection Con;
         private SqlCommand Cmd;
         private DataTable td;
+        private SqlDataAdapter sda;
         public Function()
         {
 
