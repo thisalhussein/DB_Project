@@ -27,6 +27,7 @@ namespace DB_Project
             dt = new DataTable();
             sda = new SqlDataAdapter(Query,ConStr);
             sda.Fill(dt);
+            return dt;
         }
     }
 }
