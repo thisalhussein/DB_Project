@@ -17,7 +17,7 @@ namespace DB_Project
         {
             InitializeComponent();
             Con = new Function();
-            ListerDepartments();
+            ShowDepartments();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace DB_Project
         {
 
         }
-        private void ListerDepartments()
+        private void ShowDepartments()
         {
             string Query = "Select = form DepartmentTbl";
             DepList = DataSource = Con.GetData(Query);
@@ -41,6 +41,15 @@ namespace DB_Project
                 if(DepNameTb.Text == "")
                 {
                     MessageBox.Show("Missing Data !");
+                } else
+                {
+                    string Dep = DepNameTb.Text;
+                    string Query = "Insert into DepartmentTbl values('{0}')";
+                    Query = string.Format(DepNameTb.Text);
+                    Con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Added");
+                    DepNameTb.Text = "";
                 }
             }
             catch (Exception Ex)
