@@ -119,5 +119,15 @@ namespace DB_Project
                 MessageBox.Show(Ex.Message);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

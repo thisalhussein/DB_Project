@@ -78,6 +78,7 @@
             this.button2.TabIndex = 46;
             this.button2.Text = "Upadte";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // gunaDateTimePicker2
             // 
@@ -101,6 +102,7 @@
             this.gunaDateTimePicker2.TabIndex = 44;
             this.gunaDateTimePicker2.Text = "Wednesday, January 25, 2023";
             this.gunaDateTimePicker2.Value = new System.DateTime(2023, 1, 25, 14, 36, 8, 32);
+            this.gunaDateTimePicker2.ValueChanged += new System.EventHandler(this.gunaDateTimePicker2_ValueChanged);
             // 
             // gunaDateTimePicker1
             // 
@@ -124,6 +126,7 @@
             this.gunaDateTimePicker1.TabIndex = 43;
             this.gunaDateTimePicker1.Text = "Wednesday, January 25, 2023";
             this.gunaDateTimePicker1.Value = new System.DateTime(2023, 1, 25, 14, 36, 8, 32);
+            this.gunaDateTimePicker1.ValueChanged += new System.EventHandler(this.gunaDateTimePicker1_ValueChanged);
             // 
             // gunaDataGridView1
             // 
@@ -195,6 +198,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(380, 24);
             this.comboBox1.TabIndex = 40;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -205,6 +209,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -219,6 +224,7 @@
             this.button1.TabIndex = 45;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -229,6 +235,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1144, 15);
             this.panel2.TabIndex = 39;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label8
             // 
@@ -240,6 +247,7 @@
             this.label8.Size = new System.Drawing.Size(153, 27);
             this.label8.TabIndex = 37;
             this.label8.Text = "Salary Amount";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label5
             // 
@@ -275,6 +283,7 @@
             this.label3.Size = new System.Drawing.Size(106, 27);
             this.label3.TabIndex = 32;
             this.label3.Text = "Employee";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -286,6 +295,7 @@
             this.label2.Size = new System.Drawing.Size(238, 40);
             this.label2.TabIndex = 30;
             this.label2.Text = "Manage Salary";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -297,6 +307,7 @@
             this.label1.Size = new System.Drawing.Size(470, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Employee Management System";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
@@ -308,6 +319,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1144, 88);
             this.panel1.TabIndex = 29;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // textBox1
             // 
@@ -327,6 +339,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label4
             // 
@@ -338,6 +351,7 @@
             this.label4.Size = new System.Drawing.Size(106, 27);
             this.label4.TabIndex = 48;
             this.label4.Text = "Employee";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox3
             // 
@@ -348,6 +362,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 49;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label7
             // 
@@ -359,6 +374,7 @@
             this.label7.Size = new System.Drawing.Size(126, 27);
             this.label7.TabIndex = 50;
             this.label7.Text = "Department";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label9
             // 
@@ -370,6 +386,7 @@
             this.label9.Size = new System.Drawing.Size(70, 27);
             this.label9.TabIndex = 52;
             this.label9.Text = "Salary";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // pictureBox4
             // 
@@ -380,6 +397,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 51;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label10
             // 
@@ -391,6 +409,7 @@
             this.label10.Size = new System.Drawing.Size(80, 27);
             this.label10.TabIndex = 54;
             this.label10.Text = "Logout";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // pictureBox5
             // 
@@ -401,6 +420,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 53;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // salary
             // 
