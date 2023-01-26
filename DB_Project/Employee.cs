@@ -19,7 +19,11 @@ namespace DB_Project
             Con = new Function();
             ShowDepartments();
         }
-
+        private void ShowDepartments()
+        {
+            string Query = "Select * from DepartmentTbl";
+            DepList.DataSource = Con.GetData(Query);
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
