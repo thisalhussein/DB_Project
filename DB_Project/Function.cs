@@ -30,5 +30,9 @@ namespace DB_Project
             return dt;
         }
         public int SetData(string Query)
+        {
+            int cnt = 0;
+          
+        }
     }
 }
