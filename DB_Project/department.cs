@@ -82,7 +82,7 @@ namespace DB_Project
                 else
                 {
                     string Dep = DepNameTb.Text;
-                    string Query = "Update into DepartmentTbl values('{0}')";
+                    string Query = "Update DepartmentTbl set DepName = '{0}' where DepId = {1}";
                     Query = string.Format(Query, DepNameTb.Text);
                     Con.SetData(Query);
                     ShowDepartments();
