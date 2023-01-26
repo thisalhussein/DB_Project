@@ -29,5 +29,6 @@ namespace DB_Project
             sda.Fill(dt);
             return dt;
         }
+        public int SetData(string Query)
     }
 }
