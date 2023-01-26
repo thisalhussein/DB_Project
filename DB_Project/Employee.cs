@@ -51,5 +51,12 @@ namespace DB_Project
         {
 
         }
+
+        private void EmpLbl_Click(object sender, EventArgs e)
+        {
+            Employee Obj = new Employee();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

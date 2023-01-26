@@ -58,7 +58,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.EmpLbl = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -431,16 +431,17 @@
             this.pictureBox3.TabIndex = 57;
             this.pictureBox3.TabStop = false;
             // 
-            // label12
+            // EmpLbl
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label12.Location = new System.Drawing.Point(381, 104);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 27);
-            this.label12.TabIndex = 56;
-            this.label12.Text = "Employee";
+            this.EmpLbl.AutoSize = true;
+            this.EmpLbl.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpLbl.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.EmpLbl.Location = new System.Drawing.Point(381, 104);
+            this.EmpLbl.Name = "EmpLbl";
+            this.EmpLbl.Size = new System.Drawing.Size(106, 27);
+            this.EmpLbl.TabIndex = 56;
+            this.EmpLbl.Text = "Employee";
+            this.EmpLbl.Click += new System.EventHandler(this.EmpLbl_Click);
             // 
             // pictureBox2
             // 
@@ -464,7 +465,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.EmpLbl);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.AddBtn);
@@ -531,7 +532,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label EmpLbl;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
