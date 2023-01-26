@@ -16,7 +16,7 @@ namespace DB_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new department());
+            Application.Run(new Employee());
         }
     }
 }
