@@ -14,10 +14,11 @@ namespace DB_Project
         private SqlCommand Cmd;
         private DataTable td;
         private SqlDataAdapter sda;
-        private string Constr;
+        private string ConStr;
         public Function()
         {
-            Constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alhussein\Documents\EmpDb.mdf;Integrated Security=True;Connect Timeout=30";
+            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\alhussein\Documents\EmpDb.mdf;Integrated Security=True;Connect Timeout=30";
+            Con = new SqlConnection(ConStr);
         }
     }
 }
