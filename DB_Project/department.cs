@@ -71,7 +71,7 @@ namespace DB_Project
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Editbtn_Click(object sender, EventArgs e)
         {
             try
             {
@@ -94,6 +94,10 @@ namespace DB_Project
             {
                 MessageBox.Show(Ex.Message);
             }
+        }
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
