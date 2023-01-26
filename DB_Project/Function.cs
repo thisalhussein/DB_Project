@@ -37,6 +37,8 @@ namespace DB_Project
                 Con.Open();
             }
             Cmd.CommandText = Query;
+            cnt = Cmd.ExecuteNonQuery();
+            return cnt;
         }
     }
 }
