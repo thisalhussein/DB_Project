@@ -32,7 +32,11 @@ namespace DB_Project
         public int SetData(string Query)
         {
             int cnt = 0;
-          
+            if(Con.State == ConnectionState.Closed)
+            {
+                Con.Open();
+            }
+            Cmd.CommandText = Query;
         }
     }
 }
