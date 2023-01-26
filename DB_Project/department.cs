@@ -17,7 +17,7 @@ namespace DB_Project
         {
             InitializeComponent();
             Con = new Function();
-            ShowDepartments();
+            Showdepartment();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace DB_Project
         {
 
         }
-        private void ShowDepartments()
+        private void Showdepartment()
         {
             string Query = "Select * from DepartmentTbl";
             DepList.DataSource = Con.GetData(Query);
@@ -48,7 +48,7 @@ namespace DB_Project
                     string Query = "Insert into DepartmentTbl values('{0}')";
                     Query = string.Format(Query, DepNameTb.Text);
                     Con.SetData(Query);
-                    ShowDepartments();
+                    Showdepartment();
                     MessageBox.Show("Department Added");
                     DepNameTb.Text = "";
                 }
@@ -72,7 +72,7 @@ namespace DB_Project
                     string Query = "Insert into DepartmentTbl values('{0}')";
                     Query = string.Format(Query, DepNameTb.Text);
                     Con.SetData(Query);
-                    ShowDepartments();
+                    Showdepartment();
                     MessageBox.Show("Department Added");
                     DepNameTb.Text = "";
                 }
@@ -111,7 +111,7 @@ namespace DB_Project
                     string Query = "Update DepartmentTbl set DepName = '{0}' where DepId = {1}";
                     Query = string.Format(Query, DepNameTb.Text, Key);
                     Con.SetData(Query);
-                    ShowDepartments();
+                    Showdepartment();
                     MessageBox.Show("Department Updated");
                     DepNameTb.Text = "";
                 }
@@ -136,7 +136,7 @@ namespace DB_Project
                     string Query = "Dlete from DepartmentTbl where DepId = {0}";
                     Query = string.Format(Query, Key);
                     Con.SetData(Query);
-                    ShowDepartments();
+                    Showdepartment();
                     MessageBox.Show("Department Deleted");
                     DepNameTb.Text = "";
                 }
@@ -161,7 +161,7 @@ namespace DB_Project
                     string Query = "Insert into DepartmentTbl values('{0}')";
                     Query = string.Format(Query, DepNameTb.Text);
                     Con.SetData(Query);
-                    ShowDepartments();
+                    Showdepartment();
                     MessageBox.Show("Department Added");
                     DepNameTb.Text = "";
                 }

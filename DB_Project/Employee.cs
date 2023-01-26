@@ -17,9 +17,9 @@ namespace DB_Project
         {
             InitializeComponent();
             Con = new Function();
-            ShowDepartments();
+            Showdepartment();
         }
-        private void ShowDepartments()
+        private void Showdepartment()
         {
             string Query = "Select * from DepartmentTbl";
             DepList.DataSource = Con.GetData(Query);
