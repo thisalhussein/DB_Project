@@ -31,7 +31,7 @@ namespace DB_Project
         private void ListerDepartments()
         {
             string Query = "Select = form DepartmentTbl";
-            DepList = DataSource =
+            DepList = DataSource = Con.GetData(Query);
         }
         private void Addbtn_Click(object sender, EventArgs e)
         {
