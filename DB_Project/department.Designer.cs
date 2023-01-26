@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(department));
-            this.button2 = new System.Windows.Forms.Button();
+            this.Editbtn = new System.Windows.Forms.Button();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Addbtn = new System.Windows.Forms.Button();
@@ -59,19 +59,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // Editbtn
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(246, 209);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 48);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "Upadte";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Editbtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Editbtn.FlatAppearance.BorderSize = 0;
+            this.Editbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Editbtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Editbtn.ForeColor = System.Drawing.Color.Black;
+            this.Editbtn.Location = new System.Drawing.Point(246, 209);
+            this.Editbtn.Name = "Editbtn";
+            this.Editbtn.Size = new System.Drawing.Size(164, 48);
+            this.Editbtn.TabIndex = 46;
+            this.Editbtn.Text = "Upadte";
+            this.Editbtn.UseVisualStyleBackColor = false;
             // 
             // gunaDataGridView1
             // 
@@ -310,7 +310,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1144, 666);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Editbtn);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.Addbtn);
@@ -348,7 +348,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Editbtn;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Addbtn;
