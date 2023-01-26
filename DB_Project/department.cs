@@ -57,5 +57,10 @@ namespace DB_Project
                 MessageBox.Show(Ex.Message);
             }   
         }
+        int Key = 0;
+        private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
