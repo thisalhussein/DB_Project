@@ -83,10 +83,10 @@ namespace DB_Project
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "Update DepartmentTbl set DepName = '{0}' where DepId = {1}";
-                    Query = string.Format(Query, DepNameTb.Text);
+                    Query = string.Format(Query, DepNameTb.Text, Key);
                     Con.SetData(Query);
                     ShowDepartments();
-                    MessageBox.Show("Department Added");
+                    MessageBox.Show("Department Updated");
                     DepNameTb.Text = "";
                 }
             }
