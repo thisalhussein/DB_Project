@@ -8,5 +8,9 @@ namespace DB_Project
 {
     internal class Function
     {
+        public Function()
+        {
+
+        }
     }
 }
